@@ -6,7 +6,7 @@ function reverseSequence(entry) {
     result.push(entry - i);
   }
 
-  return console.log(result);
+  return result;
 };
 
 reverseSequence(5);
