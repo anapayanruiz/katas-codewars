@@ -15,14 +15,13 @@ game):
 damage = 50 * (attack / defense) * effectiveness
 Make sure to round the result up to the nearest integer.
 
-## 4 Range Extraction
-A format for expressing an ordered list of integers is to use a comma
-separated list of either:
-- individual integers
-- or a range of integers denoted by the starting integer separated from
-the end integer in the range by a dash, '-'. The range includes all
-integers in the interval including both endpoints. It is not considered a
-range unless it spans at least 3 numbers. For example ("12, 13,
-15-17")
-Complete the solution so that it takes a list of integers in increasing order
-and returns a correctly formatted string in the range format.
+## 4 Array.diff
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+It should remove all values from list a, which are present in list b.
+
+array_diff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+
+array_diff([1,2,2,2,3],[2]) == [1,3]
+
